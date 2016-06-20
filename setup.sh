@@ -53,12 +53,12 @@ bazel -h
 
 
 echo "Needed if you open a new terminal to reset the path to bazel"
-printf "\n\nexport PATH=\$PATH:~/bin"  >> ~/.bashrc
+printf "\n\nexport PATH=\$PATH:~/bin"  >> ~/.profile
 
 #printf "\n\nsource ./bin/bazel-complete.bash"  >> ~/.profile
 echo ""
 echo "Did bazel install? Should see the bazel help info"
-echo "Press enter, if issues press ctrl-C and find out the mistake, probably the path in ~/.bashrc"
+echo "Press enter, if issues press ctrl-C and find out the mistake, probably the path in ~/.profile"
 read
 
 
@@ -87,8 +87,8 @@ echo ". "
 echo "Activate the environment use deactivate to get your cursor back"
 source ~/virtual-tf/bin/activate 
 
-printf "\n\nsource ~/virtual-tf/bin/activate "  >> ~/.bashrc
-printf "\necho 'enter   deactivate    to get out of the virtual enviroment'"  >> ~/.bashrc
+printf "\n\nsource ~/virtual-tf/bin/activate "  >> ~/.profile
+printf "\necho 'enter   deactivate    to get out of the virtual enviroment'"  >> ~/.profile
 
 
 
@@ -130,7 +130,7 @@ sudo pip install https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-
 
 # ????????????????? was working without this, check that ist still works ??????????????????
 
-#printf "\n\nexport TENSORFLOW_HOME=~/mymagenta/tensorflow/tensorflow\nexport PATH=\$PATH:\$TENSORFLOW_HOME/bin"  >> ~/.bashrc
+#printf "\n\nexport TENSORFLOW_HOME=~/mymagenta/tensorflow/tensorflow\nexport PATH=\$PATH:\$TENSORFLOW_HOME/bin"  >> ~/.profile
 
 
 #echo "exporting the path for this terminal so that commands work"
@@ -340,7 +340,7 @@ echo "Some other useful commands are cd     cd ..      dir    ls     pwd     "
 echo "."
 
 echo " To check paths for new terminals, I suggested to run:"
-echo "nano ~/.bashrc"
+echo "nano ~/.profile"
 
 
 echo "Next try the hello-world.sh bash files, might be able to run them from the GUI"
