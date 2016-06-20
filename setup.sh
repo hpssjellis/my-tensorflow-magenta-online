@@ -368,8 +368,14 @@ echo "tensorboard command is"
 echo "tensorboard --logdir=/tmp/basic_rnn"
 echo "If things don't seem correct ctrl-C to quit tensorboard, Note: this must be the last command in this batch file"
 
-tensorboard --logdir=/tmp/basic_rnn
+tensorboard --logdir=/tmp/basic_rnn --host $IP --port=8081
 
+
+
+#jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser
+#jupyter notebook --ip $IP --port $PORT --no-browser
+
+#tensorboard --logdir=/home/ubuntu/workspace/tmp5 --host $IP --port=8081
 
 
 
