@@ -167,7 +167,7 @@ git clone https://github.com/tensorflow/magenta.git
 echo "Grab my github site to load a few bash files"
 cd ~/mymagenta
 
-git clone https://github.com/hpssjellis/google-magenta-midi-music-on-linux-hello-world.git
+git clone https://github.com/hpssjellis/my-tensorflow-magenta-online.git
 
 
 echo "copy the bash file a01-helloworld.sh to the magenta workspace folder"
@@ -177,7 +177,8 @@ echo "copy the bash file a01-helloworld.sh to the magenta workspace folder"
 
 #cp a* ~/mymagenta/magenta
 
-cp ~/mymagenta/google-magenta-midi-music-on-linux-hello-world/a01-helloworld.sh ~/mymagenta/magenta/a01-helloworld.sh
+cp ~/mymagenta/my-tensorflow-magenta-online/a01-all.sh ~/mymagenta/magenta/a01-all.sh
+cp ~/mymagenta/my-tensorflow-magenta-online/a02-just-primer.sh ~/mymagenta/magenta/a02-just-primer.sh
 
 #cd google-magenta-midi-music-on-linux-hello-world
 
@@ -245,11 +246,11 @@ mkdir /tmp/basic_rnn_generated
 
 echo "Add a few symlinks to make life easier"
 
-ln -s /tmp a-link-to-tmp
-ln -s /tmp/basic_rnn a-link-to-basic_rnn-run
-ln -s /tmp/basic_rnn_generated a-link-to-generated-midi
-ln -s ~/mymagenta/magenta/magenta/testdata a-link-to-your-midi
-ln -s ~/mymagenta/magenta/magenta/models/basic_rnn a-link-to-primer-midi
+ln -s /tmp a05-link-to-tmp
+ln -s /tmp/basic_rnn a04-link-to-basic_rnn-run
+ln -s /tmp/basic_rnn_generated a03-link-to-generated-midi
+ln -s ~/mymagenta/magenta/magenta/testdata a01-link-to-your-midi
+ln -s ~/mymagenta/magenta/magenta/models/basic_rnn a02-link-to-primer-midi
 
 
 
@@ -354,15 +355,16 @@ cd ~/mymagenta/magenta
 echo "Lest be brave and try to run the hello music AI world bash file"
 echo "a01-helloworld.sh should have been copied into the magenta workspace"
 
-bash a01-helloworld.sh
+bash a01-all.sh
 
 echo "Import your midi files from /tmp/basic_rnn_generated to https://onlinesequencer.net/"
 echo""
 
 echo "running tensorboard, open a new terminal to run the other programs"
-echo "open your browser to http://0.0.0.0:6006 to run"
+
 echo "If port already in use to open the port then run"
 echo "fuser 6006/tcp -k"
+echo "fuser 8081/tcp -k"
 echo ""
 echo "tensorboard command is"
 echo "tensorboard --logdir=/tmp/basic_rnn"
@@ -370,7 +372,8 @@ echo "If things don't seem correct ctrl-C to quit tensorboard, Note: this must b
 
 tensorboard --logdir=/tmp/basic_rnn --host $IP --port=8081
 
-
+echo "tensorboard is probably at the url, click on it and 'Open'"
+echo "http://$C9_HOSTNAME:8081"
 
 #jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser
 #jupyter notebook --ip $IP --port $PORT --no-browser
