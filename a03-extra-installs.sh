@@ -15,6 +15,7 @@ sudo apt-get install git
 
 echo "Installing timidity"
 sudo apt-get install timidity
+sudo apt-get install lame
 
 echo "run timidity in the /tmp/basic_rnn_generated with the command"
 cd /tmp/basic_rnn_generated
