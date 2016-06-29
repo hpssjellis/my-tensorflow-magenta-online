@@ -179,6 +179,8 @@ echo "copy the bash file a01-helloworld.sh to the magenta workspace folder"
 
 cp ~/mymagenta/my-tensorflow-magenta-online/a01-all.sh ~/mymagenta/magenta/a01-all.sh
 cp ~/mymagenta/my-tensorflow-magenta-online/a02-just-primer.sh ~/mymagenta/magenta/a02-just-primer.sh
+cp ~/mymagenta/my-tensorflow-magenta-online/a03-extra-installs.sh ~/mymagenta/magenta/a03-extra-installs.sh
+cp ~/mymagenta/my-tensorflow-magenta-online/a04-midi-to-mp3 ~/mymagenta/magenta/a04-midi-to-mp3
 
 #cd google-magenta-midi-music-on-linux-hello-world
 
