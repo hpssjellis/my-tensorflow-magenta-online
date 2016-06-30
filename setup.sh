@@ -58,8 +58,8 @@ printf "\n\nexport PATH=\$PATH:~/bin"  >> ~/.profile
 #printf "\n\nsource ./bin/bazel-complete.bash"  >> ~/.profile
 echo ""
 echo "Did bazel install? Should see the bazel help info"
-echo "Press enter, if issues press ctrl-C and find out the mistake, probably the path in ~/.profile"
-read
+#echo "Press enter, if issues press ctrl-C and find out the mistake, probably the path in ~/.profile"
+#read
 
 
 
