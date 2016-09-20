@@ -12,9 +12,9 @@ echo "Installs Magenta to a folder in your home directory called mymagenta"
 
 
 
-mkdir ~/mymagenta
+mkdir /home/ubuntu/workspace
 
-cd ~/mymagenta
+cd /home/ubuntu/workspace
 
 
 
@@ -29,11 +29,11 @@ sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
 sudo apt-get -y install oracle-java8-installer pkg-config zip g++ zlib1g-dev unzip
 
-mkdir ~/mymagenta/bazel
-cd ~/mymagenta/bazel
+mkdir /home/ubuntu/workspace/bazel
+cd /home/ubuntu/workspace/bazel
 
-#wget https://github.com/bazelbuild/bazel/releases/download/0.2.3/bazel-0.2.3-installer-linux-x86_64.sh -O ~/mymagenta/bazel/bazel-0.2.3-installer-linux-x86_64.sh
-wget https://github.com/bazelbuild/bazel/releases/download/0.3.1/bazel-0.3.1-installer-linux-x86_64.sh -O ~/mymagenta/bazel/bazel-0.3.1-installer-linux-x86_64.sh
+#wget https://github.com/bazelbuild/bazel/releases/download/0.2.3/bazel-0.2.3-installer-linux-x86_64.sh -O /home/ubuntu/workspace/bazel/bazel-0.2.3-installer-linux-x86_64.sh
+wget https://github.com/bazelbuild/bazel/releases/download/0.3.1/bazel-0.3.1-installer-linux-x86_64.sh -O /home/ubuntu/workspace/bazel/bazel-0.3.1-installer-linux-x86_64.sh
 
 #chmod +x bazel-0.2.3-installer-linux-x86_64.sh
 
@@ -67,7 +67,7 @@ echo "Did bazel install? Should see the bazel help info"
 
 
 
-cd ~/mymagenta
+cd /home/ubuntu/workspace
 
 
 echo "----------------Bazel Done----------------------------------------------"
@@ -99,7 +99,7 @@ printf "\necho 'enter   deactivate    to get out of the virtual enviroment'"  >>
 
 echo "Now get TensorFlow"
 
-cd ~/mymagenta
+cd /home/ubuntu/workspace
 
 #sudo pip install --upgrade http://ci.tensorflow.org/view/Nightly/job/nightly-matrix-cpu/TF_BUILD_CONTAINER_TYPE=CPU,TF_BUILD_IS_OPT=OPT,TF_BUILD_IS_PIP=PIP,TF_BUILD_PYTHON_VERSION=PYTHON2,label=cpu-slave/lastSuccessfulBuild/artifact/pip_test/whl/tensorflow-0.8.0-cp27-none-linux_x86_64.whl
 
@@ -138,13 +138,13 @@ sudo pip install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/t
 
 # ????????????????? was working without this, check that ist still works ??????????????????
 
-#printf "\n\nexport TENSORFLOW_HOME=~/mymagenta/tensorflow/tensorflow\nexport PATH=\$PATH:\$TENSORFLOW_HOME/bin"  >> ~/.profile
+#printf "\n\nexport TENSORFLOW_HOME=/home/ubuntu/workspace/tensorflow/tensorflow\nexport PATH=\$PATH:\$TENSORFLOW_HOME/bin"  >> ~/.profile
 
 
 #echo "exporting the path for this terminal so that commands work"
 
 
-#export TENSORFLOW_HOME=~/mymagenta/tensorflow/tensorflow
+#export TENSORFLOW_HOME=/home/ubuntu/workspace/tensorflow/tensorflow
 #export PATH=$PATH:$TENSORFLOW_HOME/bin
 
 
@@ -158,7 +158,7 @@ echo ". "
 
 
 
-cd ~/mymagenta
+cd /home/ubuntu/workspace
 
 
 echo "Now install Google Magenta"
@@ -168,37 +168,37 @@ git clone https://github.com/tensorflow/magenta.git
 
 #broken link to tensorflow???
 
-#ln -s ~/virtual-tf/lib/python2.7/site-packages/tensorflow ~/mymagenta/pip-tensorflow-link
+#ln -s ~/virtual-tf/lib/python2.7/site-packages/tensorflow /home/ubuntu/workspace/pip-tensorflow-link
 
 
 
 echo "Grab my github site to load a few bash files"
-cd ~/mymagenta
+cd /home/ubuntu/workspace
 
-git clone https://github.com/hpssjellis/my-tensorflow-magenta-online.git
-
-
-echo "copy the bash file a01-helloworld.sh to the magenta workspace folder"
+#git clone https://github.com/hpssjellis/my-tensorflow-magenta-online.git
 
 
-#cd ~/mymagenta/google-magenta-midi-music-on-linux-hello-world
+#echo "copy the bash file a01-helloworld.sh to the magenta workspace folder"
 
-#cp a* ~/mymagenta/magenta
 
-cp ~/mymagenta/my-tensorflow-magenta-online/a01-all.sh ~/mymagenta/magenta/a01-all.sh
-cp ~/mymagenta/my-tensorflow-magenta-online/a02-just-primer.sh ~/mymagenta/magenta/a02-just-primer.sh
-cp ~/mymagenta/my-tensorflow-magenta-online/a03-extra-installs.sh ~/mymagenta/magenta/a03-extra-installs.sh
-cp ~/mymagenta/my-tensorflow-magenta-online/a04-midi-to-mp3 ~/mymagenta/magenta/a04-midi-to-mp3
+#cd /home/ubuntu/workspace/google-magenta-midi-music-on-linux-hello-world
+
+#cp a* /home/ubuntu/workspace/magenta
+
+#cp /home/ubuntu/workspace/my-tensorflow-magenta-online/a01-all.sh /home/ubuntu/workspace/magenta/a01-all.sh
+#cp /home/ubuntu/workspace/my-tensorflow-magenta-online/a02-just-primer.sh /home/ubuntu/workspace/magenta/a02-just-primer.sh
+#cp /home/ubuntu/workspace/my-tensorflow-magenta-online/a03-extra-installs.sh /home/ubuntu/workspace/magenta/a03-extra-installs.sh
+#cp /home/ubuntu/workspace/my-tensorflow-magenta-online/a04-midi-to-mp3 /home/ubuntu/workspace/magenta/a04-midi-to-mp3
 
 #cd google-magenta-midi-music-on-linux-hello-world
 
-#mv a01-helloworld.sh ~/mymagenta/magenta/a01-helloworld.sh
+#mv a01-helloworld.sh /home/ubuntu/workspace/magenta/a01-helloworld.sh
 
 
 
 #echo "attempt to make the batch file a01-helloworld.sh runnable"
 
-#chmod a+x ~/mymagenta/magenta/a01-helloworld.sh
+#chmod a+x /home/ubuntu/workspace/magenta/a01-helloworld.sh
 
 #bash a01-rocksetta-checks.sh
 
@@ -207,9 +207,9 @@ cp ~/mymagenta/my-tensorflow-magenta-online/a04-midi-to-mp3 ~/mymagenta/magenta/
 
 echo "Now test if bazel is working and build ~1.5 Gb of files"
 
-cd ~/mymagenta/magenta
+cd /home/ubuntu/workspace/magenta
 
-bazel test //magenta:all
+#bazel test //magenta:all
 
 
 echo "If it all worked try these scripts"
@@ -235,7 +235,7 @@ echo "If it all worked try these scripts"
 
 
 
-cd ~/mymagenta/magenta
+cd /home/ubuntu/workspace/magenta
 
 
 
@@ -259,8 +259,8 @@ echo "Add a few symlinks to make life easier"
 ln -s /tmp a05-link-to-tmp
 ln -s /tmp/basic_rnn a04-link-to-basic_rnn-run
 ln -s /tmp/basic_rnn_generated a03-link-to-generated-midi
-ln -s ~/mymagenta/magenta/magenta/testdata a01-link-to-your-midi
-ln -s ~/mymagenta/magenta/magenta/models/basic_rnn a02-link-to-primer-midi
+ln -s /home/ubuntu/workspace/magenta/magenta/testdata a01-link-to-your-midi
+ln -s /home/ubuntu/workspace/magenta/magenta/models/basic_rnn a02-link-to-primer-midi
 
 
 
@@ -339,7 +339,7 @@ echo ""
 echo "--------------------------------------------------------------"
 echo ". "
 
-cd ~/mymagenta
+cd /home/ubuntu/workspace
 
 echo "next list this directory"
 pwd
@@ -360,7 +360,7 @@ echo "If not just open a new folder and type bash <name of hello-world.sh progra
 
 
 
-cd ~/mymagenta/magenta
+cd /home/ubuntu/workspace/magenta
 
 echo "Lest be brave and try to run the hello music AI world bash file"
 echo "a01-helloworld.sh should have been copied into the magenta workspace"
