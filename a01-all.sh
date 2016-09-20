@@ -31,7 +31,7 @@ HPARAMS_SET='{"rnn_layer_sizes":[50]}'
 
 
 bazel run //magenta/scripts:convert_midi_dir_to_note_sequences -- \
---midi_dir=~/mymagenta/magenta/magenta/testdata \
+--midi_dir=/home/ubuntu/workspace/magenta/magenta/testdata \
 --output_file=$SEQUENCES_TFRECORD \
 --recursive
 
