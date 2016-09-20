@@ -236,7 +236,7 @@ echo "If it all worked try these scripts"
 
 
 
-cd /home/ubuntu/workspace/magenta
+cd /home/ubuntu/workspace/magenta/magenta
 
 
 
@@ -257,12 +257,15 @@ mkdir /tmp/basic_rnn_generated
 
 echo "Add a few symlinks to make life easier"
 
-ln -s /tmp a05-link-to-tmp
-ln -s /tmp/basic_rnn a04-link-to-basic_rnn-run
-ln -s /tmp/basic_rnn_generated a03-link-to-generated-midi
+cd /home/ubuntu/workspace
+
+
+ln -s /home/ubuntu/workspace/magenta/magenta a00-magenta-workspace
 ln -s /home/ubuntu/workspace/magenta/magenta/testdata a01-link-to-your-midi
 ln -s /home/ubuntu/workspace/magenta/magenta/models/basic_rnn a02-link-to-primer-midi
-ln -s /home/ubuntu/workspace/magenta/magenta a00-magenta-workspace
+ln -s /tmp/basic_rnn_generated a03-link-to-generated-midi
+ln -s /tmp/basic_rnn a04-link-to-basic_rnn-run
+ln -s /tmp a05-link-to-tmp
 
 
 
