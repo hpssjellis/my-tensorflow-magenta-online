@@ -366,7 +366,7 @@ echo "If not just open a new folder and type bash <name of hello-world.sh progra
 
 
 
-cd /home/ubuntu/workspace/magenta
+cd /home/ubuntu/workspace/magenta/magenta
 
 echo "Lest be brave and try to run the hello music AI world bash file"
 echo "a01-helloworld.sh should have been copied into the magenta workspace"
