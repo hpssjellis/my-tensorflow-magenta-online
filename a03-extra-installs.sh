@@ -5,8 +5,9 @@
 
 # if you don't have git try
 
-echo "Installing Git"
-sudo apt-get install git
+#echo "Installing Git"
+#allready on cloud9
+#sudo apt-get install git
 
 
 
