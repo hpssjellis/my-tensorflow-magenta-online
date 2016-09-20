@@ -241,7 +241,13 @@ cd /home/ubuntu/workspace/magenta/magenta
 
 
 echo "Might as well build the training file structure here"
-bazel build //magenta/models:basic_rnn_train
+
+
+
+bazel build //magenta/scripts:convert_midi_dir_to_note_sequences
+bazel build //magenta/models/basic_rnn:basic_rnn_create_dataset
+bazel build //magenta/models/basic_rnn:basic_rnn_train
+bazel build //magenta/models/basic_rnn:basic_rnn_generate
 
 echo "and setup a spot for temporary files"
 echo "not sure if magenta can make the folders for you????"
@@ -370,7 +376,7 @@ echo "If not just open a new folder and type bash <name of hello-world.sh progra
 
 cd /home/ubuntu/workspace/magenta/magenta
 
-echo "Lest be brave and try to run the hello music AI world bash file"
+echo "Lets be brave and try to run the hello music AI world bash file"
 echo "a01-helloworld.sh should have been copied into the magenta workspace"
 
 bash a01-all.sh
