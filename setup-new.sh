@@ -186,10 +186,10 @@ cd /home/ubuntu/workspace
 
 #cp a* /home/ubuntu/workspace/magenta
 
-cp /home/ubuntu/workspace/a01-all.sh /home/ubuntu/workspace/magenta/a01-all.sh
-cp /home/ubuntu/workspace/a02-just-primer.sh /home/ubuntu/workspace/magenta/a02-just-primer.sh
-cp /home/ubuntu/workspace/a03-extra-installs.sh /home/ubuntu/workspace/magenta/a03-extra-installs.sh
-cp /home/ubuntu/workspace/a04-midi-to-mp3 /home/ubuntu/workspace/magenta/a04-midi-to-mp3
+cp /home/ubuntu/workspace/a01-all.sh /home/ubuntu/workspace/magenta/magenta/a01-all.sh
+cp /home/ubuntu/workspace/a02-just-primer.sh /home/ubuntu/workspace/magenta/magenta/a02-just-primer.sh
+cp /home/ubuntu/workspace/a03-extra-installs.sh /home/ubuntu/workspace/magenta/magenta/a03-extra-installs.sh
+cp /home/ubuntu/workspace/a04-midi-to-mp3 /home/ubuntu/workspace/magenta/magenta/a04-midi-to-mp3
 
 #cd google-magenta-midi-music-on-linux-hello-world
 
@@ -262,6 +262,8 @@ ln -s /tmp/basic_rnn a04-link-to-basic_rnn-run
 ln -s /tmp/basic_rnn_generated a03-link-to-generated-midi
 ln -s /home/ubuntu/workspace/magenta/magenta/testdata a01-link-to-your-midi
 ln -s /home/ubuntu/workspace/magenta/magenta/models/basic_rnn a02-link-to-primer-midi
+ln -s /home/ubuntu/workspace/magenta/magenta a00-magenta-workspace
+
 
 
 
