@@ -172,8 +172,9 @@ git clone https://github.com/tensorflow/magenta.git
 
 
 
-echo "Grab my github site to load a few bash files"
+echo "Move a few files from the main folder into the magneta folder"
 cd /home/ubuntu/workspace
+
 
 #git clone https://github.com/hpssjellis/my-tensorflow-magenta-online.git
 
@@ -185,10 +186,10 @@ cd /home/ubuntu/workspace
 
 #cp a* /home/ubuntu/workspace/magenta
 
-#cp /home/ubuntu/workspace/my-tensorflow-magenta-online/a01-all.sh /home/ubuntu/workspace/magenta/a01-all.sh
-#cp /home/ubuntu/workspace/my-tensorflow-magenta-online/a02-just-primer.sh /home/ubuntu/workspace/magenta/a02-just-primer.sh
-#cp /home/ubuntu/workspace/my-tensorflow-magenta-online/a03-extra-installs.sh /home/ubuntu/workspace/magenta/a03-extra-installs.sh
-#cp /home/ubuntu/workspace/my-tensorflow-magenta-online/a04-midi-to-mp3 /home/ubuntu/workspace/magenta/a04-midi-to-mp3
+cp /home/ubuntu/workspace/a01-all.sh /home/ubuntu/workspace/magenta/a01-all.sh
+cp /home/ubuntu/workspace/a02-just-primer.sh /home/ubuntu/workspace/magenta/a02-just-primer.sh
+cp /home/ubuntu/workspace/a03-extra-installs.sh /home/ubuntu/workspace/magenta/a03-extra-installs.sh
+cp /home/ubuntu/workspace/a04-midi-to-mp3 /home/ubuntu/workspace/magenta/a04-midi-to-mp3
 
 #cd google-magenta-midi-music-on-linux-hello-world
 
