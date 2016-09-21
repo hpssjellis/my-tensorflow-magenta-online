@@ -188,6 +188,13 @@ cd /home/ubuntu/workspace
 
 mv /home/ubuntu/workspace/a01-all.sh /home/ubuntu/workspace/magenta/magenta/a01-all.sh
 mv /home/ubuntu/workspace/a02-just-primer.sh /home/ubuntu/workspace/magenta/magenta/a02-just-primer.sh
+mv /home/ubuntu/workspace/a05-pre-trained-by-magenta.sh /home/ubuntu/workspace/magenta/magenta/a05-pre-trained-by-magenta.sh
+mv /home/ubuntu/workspace/trained-magenta /home/ubuntu/workspace/magenta/magenta/trained-magenta
+
+
+
+
+
 #mv /home/ubuntu/workspace/a03-extra-installs.sh /home/ubuntu/workspace/magenta/magenta/a03-extra-installs.sh
 #mv /home/ubuntu/workspace/a04-midi-to-mp3 /home/ubuntu/workspace/magenta/magenta/a04-midi-to-mp3
 
