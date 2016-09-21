@@ -372,6 +372,12 @@ echo "Next try the hello-world.sh bash files, might be able to run them from the
 echo "If not just open a new folder and type bash <name of hello-world.sh program>"
 
 
+echo "While we are at it lets load another tensorflow githu site https://github.com/hpssjellis/char-rnn-tensorflow-music-3dprinting.git"
+
+cd /home/ubuntu/workspace/magenta/magenta
+
+git clone https://github.com/hpssjellis/char-rnn-tensorflow-music-3dprinting.git
+
 
 
 cd /home/ubuntu/workspace/magenta/magenta
