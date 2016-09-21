@@ -2,8 +2,7 @@
 
 
 
-
-BUNDLE_PATH=/home/ubuntu/workspace/magenta/trained-magenta/basic_rnn.mag
+BUNDLE_PATH=/home/ubuntu/workspace/magenta/magenta/trained-magenta/basic_rnn.mag
 
 bazel run //magenta/models/basic_rnn:basic_rnn_generate -- \
 --bundle_file=${BUNDLE_PATH} \
