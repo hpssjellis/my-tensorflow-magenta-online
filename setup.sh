@@ -268,7 +268,7 @@ cd /home/ubuntu/workspace
 
 ln -s /home/ubuntu/workspace/magenta/magenta a00-magenta-workspace
 ln -s /home/ubuntu/workspace/magenta/magenta/testdata a01-link-to-your-midi
-ln -s /home/ubuntu/workspace/magenta/magenta/models/basic_rnn a02-link-to-primer-midi
+ln -s /home/ubuntu/workspace/magenta/magenta/models/shared a02-link-to-primer-midi
 
 ln -s /tmp/basic_rnn_generated a03-link-to-generated-midi
 ln -s /tmp/basic_rnn a04-link-to-basic_rnn-run
