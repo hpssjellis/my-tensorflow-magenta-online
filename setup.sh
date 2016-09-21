@@ -253,9 +253,9 @@ echo "and setup a spot for temporary files"
 echo "not sure if magenta can make the folders for you????"
 
 mkdir /tmp/basic_rnn
-mkdir /tmp/basic_rnn/run1
-mkdir /tmp/basic_rnn/run2
-mkdir /tmp/basic_rnn/run3
+#mkdir /tmp/basic_rnn/run1
+#mkdir /tmp/basic_rnn/run2
+#mkdir /tmp/basic_rnn/run3
 mkdir /tmp/basic_rnn_generated
 
 
