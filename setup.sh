@@ -374,7 +374,7 @@ echo "If not just open a new folder and type bash <name of hello-world.sh progra
 
 echo "While we are at it lets load another tensorflow githu site https://github.com/hpssjellis/char-rnn-tensorflow-music-3dprinting.git"
 
-cd /home/ubuntu/workspace/magenta/magenta
+cd /home/ubuntu/workspace/
 
 git clone https://github.com/hpssjellis/char-rnn-tensorflow-music-3dprinting.git
 
