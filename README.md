@@ -4,6 +4,11 @@ An option for windows users and others to install and use Google's Magenta Music
 
 
 
+Dec 18, 2016
+
+Presently not working
+
+
 June 20th, 2016
 
 My second attempt to install Google's Music AI Magenta. The first is just for Linux and perhaps only for Ubuntu. It is at 
