@@ -399,6 +399,23 @@ pip install matplotlib scipy IPython
 
 
 
+
+
+
+
+echo "get Bazel working well"
+bazel clean
+bazel shutdown
+bazel fetch //magenta...
+bazel build //magenta...
+bazel test //magenta...
+
+
+
+
+
+
+
 echo "Lets be brave and try to run the hello music AI world bash file"
 echo "a01-helloworld.sh should have been copied into the magenta workspace"
 
