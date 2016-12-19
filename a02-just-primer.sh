@@ -16,20 +16,24 @@
 #leave blank for the first note to be randomly generated
 
 
+TEMP_PATH=/tmp/melody_rnn
 
-bazel run //magenta/models/basic_rnn:basic_rnn_generate -- \
---run_dir=/tmp/basic_rnn/logdir/run1 \
---hparams=$HPARAMS_SET \
---output_dir=/tmp/basic_rnn_generated \
+
+############################### Generate your midi files ####################################################
+
+
+
+
+#PRIMER_PATH=/Users/jsawruk/magenta/magenta/models/shared/primer.mid
+
+bazel run //magenta/models/melody_rnn:melody_rnn_generate -- \
+--config='basic_rnn' \
+--run_dir=${TEMP_PATH}/logdir/run1 \
+--hparams="{'batch_size':64,'rnn_layer_sizes':[64,64]}" \
+--output_dir=${TEMP_PATH}/generated \
+--num_outputs=2 \
 --num_steps=640 \
---num_outputs=1 \
 --temperature=1 \
 --bpm=30 \
 --log=DEBUG \
 --primer_melody="[60, -2, 60, -2, 67, -2, 67, -2]"
-
-
-#\
-#--primer_midi=~/mymagenta/magenta/magenta/models/shared/primer.mid
-
-# --primer_melody="[60, -2, 60, -2, 67, -2, 67, -2]"
