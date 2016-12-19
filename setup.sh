@@ -251,22 +251,22 @@ echo "Might as well build the training file structure here"
 
 
 
-bazel build //magenta/scripts:convert_midi_dir_to_note_sequences
-bazel build //magenta/models/basic_rnn:basic_rnn_create_dataset
-bazel build //magenta/models/basic_rnn:basic_rnn_train
-bazel build //magenta/models/basic_rnn:basic_rnn_generate
+#bazel build //magenta/scripts:convert_midi_dir_to_note_sequences
+#bazel build //magenta/models/basic_rnn:basic_rnn_create_dataset
+#bazel build //magenta/models/basic_rnn:basic_rnn_train
+#bazel build //magenta/models/basic_rnn:basic_rnn_generate
 
 echo "and setup a spot for temporary files"
 echo "not sure if magenta can make the folders for you????"
 
-mkdir /tmp/basic_rnn
-mkdir /tmp/basic_rnn/logdir
-mkdir /tmp/basic_rnn/logdir/run1
+mkdir /tmp/melody_rnn
+#mkdir /tmp/basic_rnn/logdir
+#mkdir /tmp/basic_rnn/logdir/run1
 
 #mkdir /tmp/basic_rnn/run1
 #mkdir /tmp/basic_rnn/run2
 #mkdir /tmp/basic_rnn/run3
-mkdir /tmp/basic_rnn_generated
+mkdir /tmp/melosy_rnn/generated
 
 
 
@@ -277,11 +277,11 @@ cd /home/ubuntu/workspace
 
 
 ln -s /home/ubuntu/workspace/magenta/magenta a00-magenta-workspace
-ln -s /home/ubuntu/workspace/magenta/magenta/testdata a01-link-to-your-midi
-ln -s /home/ubuntu/workspace/magenta/magenta/models/shared a02-link-to-primer-midi
+ln -s /home/ubuntu/workspace/magenta/magenta/testdata a01-link-to-magenta-example-midi
+ln -s /home/ubuntu/workspace/magenta/magenta/models/melody_rnn a02-link-to-primer-midi
 
-ln -s /tmp/basic_rnn_generated a03-link-to-generated-midi
-ln -s /tmp/basic_rnn a04-link-to-basic_rnn-run
+ln -s /tmp/melody_rnn/generated a03-link-to-generated-midi
+ln -s /tmp/melody_rnn a04-link-to-basic_rnn-run
 ln -s /tmp a05-link-to-tmp
 
 
