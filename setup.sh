@@ -266,7 +266,7 @@ mkdir /tmp/melody_rnn
 #mkdir /tmp/basic_rnn/run1
 #mkdir /tmp/basic_rnn/run2
 #mkdir /tmp/basic_rnn/run3
-mkdir /tmp/melosy_rnn/generated
+mkdir /tmp/melody_rnn/generated
 
 
 
